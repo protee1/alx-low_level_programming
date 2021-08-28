@@ -1,40 +1,52 @@
-/*
- * File: 101-print_comb4.c
- * Auth: Protogene Mugiraneza
- */
-
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
+/* betty style doc for function main goes there */
 /**
- * main - Prints all possible combinations of three different digits,
- *        in ascending order, separated by a comma followed by a space.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int i;
+	int j;
+	int k;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	i = 48;
+	j = 49;
+	k = 50;
+	while  ((i < 56) && (j < 57) && (k < 58))
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		putchar(i);
+		putchar(j);
+		putchar(k);
+		if ((i == 55) && (j == 56) && (k == 57))
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			putchar('\n');
+			i++;
+			j++;
+			k++;
+		}
+		else
+		{
+			putchar(44);
+			putchar(32);
+			if (k < 57)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-				
-				putchar(',');
-				putchar(' ');
+				k++;
+			}
+			else if ((j < 56) && (k == 57))
+			{
+				k = 1 + ++j;
+			}
+			else
+			{
+				j = 1 + ++i;
+				k = 1 + j;
 			}
 		}
 	}
-
-	putchar('\n');
-
 	return (0);
 }
