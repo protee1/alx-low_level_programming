@@ -1,23 +1,17 @@
-/*
- * File: 2-print_alphabet.c
- * Auth: Protogene Mugiraneza
- */
-
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Prints the alphabetic
  *
- * Return: Always 0.
+ * Return: Always (Success)
  */
 int main(void)
 {
-	char letter;
+	char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
 
 	putchar('\n');
-
 	return (0);
 }	
