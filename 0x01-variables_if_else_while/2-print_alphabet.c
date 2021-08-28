@@ -1,17 +1,21 @@
 #include <stdio.h>
 
+
 /**
- * main - Prints the alphabetic
+ * main - Entry point
  *
- * Return: Always (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	char l;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-
+	l = 'a';
+	while (l <= 'z')
+	{
+		putchar(l);
+		l++;
+	}
 	putchar('\n');
 	return (0);
 }	
