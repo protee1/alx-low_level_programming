@@ -1,16 +1,8 @@
-/*
- * File: 0-holberton.c
- * Auth: Protogene Mugiraneza
- *
- */
-
 #include "main.h"
-
 /**
- * main - Prints "Holberton" followed by a new line.
- *
- * Return: Always 0.
- */
+*main - prints Holberton
+*Return: 0
+*/
 int main(void)
 {
 	_putchar('H');
@@ -23,6 +15,5 @@ int main(void)
 	_putchar('o');
 	_putchar('n');
 	_putchar('\n');
-
 	return (0);
 }
