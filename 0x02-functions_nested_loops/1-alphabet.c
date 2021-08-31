@@ -1,19 +1,12 @@
-/*
- * File: 1-alphabet.c
- * Auth: Protogene Mugiraneza
- */
-
-#include "holberton.h"
-
+#include "main.h"
 /**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * print_alphabet - prints alphabet
  */
 void print_alphabet(void)
 {
-	char letter;
+	char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
 	_putchar('\n');
 }	
