@@ -15,4 +15,3 @@ void print_chessboard(char (*a)[8])
 		_putchar('\n');
 	}
 }
-© 2021 GitHub, Inc.
