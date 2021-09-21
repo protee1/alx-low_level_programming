@@ -102,4 +102,3 @@ int countWords(char *s)
 	}
 	return (words);
 }
-© 2021 GitHub, Inc.
